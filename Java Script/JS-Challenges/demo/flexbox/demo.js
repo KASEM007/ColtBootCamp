@@ -62,12 +62,44 @@
 //     func();
 // }
 
-function callTenTimes(f){
-    for(let i = 0; i < 10; i++){
-        f()
-    }
-}
-function rollDie(){
-    const roll = Math.floor(Math.random() * 6) + 1
-    console.log(roll)
-}
+// 
+
+// const friends = [{firstName:'Tammy', age:30, userName:'TamTam' }, 
+//             {firstName:'Panda', age:55, userName:'PandaMan'}]
+
+// totalAge = (friends[0].age + friends[1].age) / 2
+
+// for (let i = 50; i >= 0; i--){
+//     console.log(i)
+// }
+
+// Password
+
+// let password = 'lol';
+// let guess = prompt("Enter the Password");
+// while (guess !== password){
+//     guess = prompt("Enter the password");
+
+// }
+// console.log("You got it right!!!")
+
+//  sum Numbers togther
+// const purchase = [19.99, 9.50, 4.24 ]
+// let total = 0
+// for(let i of purchase){
+//     console.log(i)
+//     total += i
+// }
+// console.log(`total is : $${total}`)
+
+// function laugh(laughLevel, name){
+//     console.log("ha".repeat(laughLevel))
+//     console.log(`name fo the laugher: ${name}`)
+// }
+
+// laugh(5, 'Mo');
+
+
+
+
+
