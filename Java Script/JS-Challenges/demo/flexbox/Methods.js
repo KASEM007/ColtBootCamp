@@ -162,11 +162,13 @@
 // const{email, firstName, lastName, city} = user;
 // const{born:BirthDay} = user;
 
-const user = {firstName:'Aysha', lastName:'Kasem', id:4040, city:'Dallas'};
+// const user = {firstName:'Aysha', lastName:'Kasem', id:4040, city:'Dallas'};
 
-function fullName({firstName, lastName}){
-    return `${firstName} ${lastName}`
-}
+// function fullName({firstName, lastName}){
+//     return `${firstName} ${lastName}`
+//}
+
+
 
 
 

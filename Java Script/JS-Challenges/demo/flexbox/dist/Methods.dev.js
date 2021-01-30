@@ -1,5 +1,3 @@
-"use strict";
-
 // const cat = {
 //     name:'Blue Steele',
 //     color:'grey',
@@ -135,15 +133,8 @@
 // const lastName = user.lastName;
 // const{email, firstName, lastName, city} = user;
 // const{born:BirthDay} = user;
-var user = {
-  firstName: 'Aysha',
-  lastName: 'Kasem',
-  id: 4040,
-  city: 'Dallas'
-};
-
-function fullName(_ref) {
-  var firstName = _ref.firstName,
-      lastName = _ref.lastName;
-  return "".concat(firstName, " ").concat(lastName);
-}
+// const user = {firstName:'Aysha', lastName:'Kasem', id:4040, city:'Dallas'};
+// function fullName({firstName, lastName}){
+//     return `${firstName} ${lastName}`
+//}
+"use strict";
