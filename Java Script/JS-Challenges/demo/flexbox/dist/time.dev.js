@@ -24,14 +24,33 @@
 // function green(){
 //     document.getElementById("header").style.color = "Green";
 // }
+// function pressed(){
+//     const text = document.getElementById("inp").Value;
+//     if (text === 'red'){
+//         document.getElementById('header').style.color = 'red';
+//     } else if (text === 'green'){
+//         document.getElementById('header').style.color('green');
+//     }else if(text === 'blue'){
+//         document.getElementById('header').style.color ='blue';
+//     }
+// }
 function pressed() {
   var text = document.getElementById("inp").Value;
 
-  if (text === 'red') {
-    document.getElementById('header').style.color = 'red';
-  } else if (text === 'green') {
-    document.getElementById('header').style.color('green');
-  } else if (text === 'blue') {
-    document.getElementById('header').style.color = 'blue';
+  switch (text) {
+    case 'red':
+      document.getElementById("header").style.color = 'red';
+      break;
+
+    case 'blue':
+      document.getElementById('header').style.color = 'blue';
+      break;
+
+    case 'green':
+      document.getElementById('header').style.color = 'green';
+
+    default:
+      document.getElementById('header').style.color = 'black';
+      break;
   }
 }
