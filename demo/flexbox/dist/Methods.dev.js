@@ -1,11 +1,3 @@
-"use strict";
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
 // const cat = {
 //     name:'Blue Steele',
 //     color:'grey',
@@ -209,34 +201,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 // class
 
 /***************/
-var Person =
-/*#__PURE__*/
-function () {
-  function Person(firstName, lastName, dob) {
-    _classCallCheck(this, Person);
-
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob);
-  }
-
-  _createClass(Person, [{
-    key: "getBirthYear",
-    value: function getBirthYear() {
-      return this.bod.getFullYear();
-    }
-  }, {
-    key: "getFullName",
-    value: function getFullName() {
-      return "".concat(this.firstName, " ").concat(this.lastName);
-    }
-  }]);
-
-  return Person;
-}(); // Instantiate object
-
-
-var person1 = new Person('John', 'Doe', '04-03-1980');
-var person2 = new Person('Mary', 'Smith', '03-06-1970');
-console.log(person2.getFullName());
-console.log(person1);
+// class Person{
+//     constructor(firstName, lastName, dob){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.dob = new Date(dob)
+//     }
+//     getBirthYear(){
+//         return this.bod.getFullYear();
+//     }
+//     getFullName(){
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+//  }
+//  // Instantiate object
+//  const person1 = new Person('John', 'Doe', '04-03-1980');
+//  const person2 = new Person('Mary', 'Smith', '03-06-1970');
+//  console.log(person2.getFullName());
+//  console.log(person1);
+"use strict";
