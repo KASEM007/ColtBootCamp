@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(226, 216, 216);
+    padding: 20px 20px 20px 20px;
+    
+
+}
+
+nav ul{
+    background-color: rgb(255, 253, 252);
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(2, 221, 31);
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: green;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 40px 40px 40px 30px;
+    color: Papayawhip;
+    
+
+}
+
+h1{
+    color: black;
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+ol{list-style-type: upper-roman;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: darkolivegreen;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img{
+    padding-left: 10%;
+    border-radius: 20px;
+    
+}
+iframe{
+    padding-left: 10%;
+    
+
+}
