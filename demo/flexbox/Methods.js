@@ -263,12 +263,12 @@
 //     }
 //  }
 
-//  // Instantiate object
-//  const person1 = new Person('John', 'Doe', '04-03-1980');
-//  const person2 = new Person('Mary', 'Smith', '03-06-1970');
+ // Instantiate object
+ const person1 = new Person('John', 'Doe', '04-03-1980');
+ const person2 = new Person('Mary', 'Smith', '03-06-1970');
 
-//  console.log(person2.getFullName());
-//  console.log(person1);
+ console.log(person2.getFullName());
+ console.log(person1);
 
 
 
