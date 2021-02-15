@@ -19,6 +19,14 @@ document.querySelector('h1').onclick = function () {
 };
 
 var btn2 = document.querySelector('#v2');
-btn3.addEventListener('click', function () {
+btn2.addEventListener('click', function () {
   alert('clicked!');
+});
+var helloButton = document.querySelector("#hello");
+var goodbyeButton = document.querySelector("#goodbye");
+helloButton.addEventListener('click', function () {
+  console.log("hello");
+});
+goodbyeButton.addEventListener('click', function () {
+  console.log("goodbye");
 });
