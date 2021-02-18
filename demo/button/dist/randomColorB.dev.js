@@ -17,6 +17,7 @@ try {
     var button = _step.value;
     button.addEventListener('click', function () {
       button.style.backgroundColor = makeRandomColor();
+      button.style.color = makeRandomColor();
     });
   };
 

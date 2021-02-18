@@ -1,28 +1,43 @@
-body{
+body {
     background-color: silver;
 }
-    
-.firstp{
+
+.firstp {
     font-weight: bold;
 }
 
-table, th, td{
+table,
+th,
+td {
     border: 1px solid HoneyDew;
     border-collapse: collapse;
 
 }
-tr{
+
+tr {
     background-color: paleTurquoise;
 }
 
-th, td{
+th,
+td {
     vertical-align: top;
     padding: 5px;
     text-align: center;
 }
-th{
-    color:purple;
-}
-td{
+
+th {
     color: purple;
+}
+
+td {
+    color: purple;
+}
+
+.niceLinks {
+    text-decoration: none;
+    color: navy;
+}
+
+.niceLinks:hover {
+    color: #00ff7f;
 }

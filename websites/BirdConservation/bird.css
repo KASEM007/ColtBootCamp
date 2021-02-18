@@ -1,11 +1,56 @@
-body{
+body {
     background-color: rgb(226, 216, 216);
     padding: 20px 20px 20px 20px;
-    
-
+    margin: 10px 10px 10px 10px;
 }
 
-nav ul{
+.myCoolText {
+    color: #003366;
+    border: 2px ridge #ccffff;
+    padding: 15px;
+    text-align: center;
+    animation-name: rainbowGlow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#borderR {
+    width: 90%;
+    border-radius: 100%;
+}
+
+
+@keyframes rainbowGlow {
+    0% {
+        color: #ffd700;
+    }
+
+    50% {
+        color: #663399;
+    }
+
+    100% {
+        color: #ffd700;
+    }
+}
+
+#frontPage {
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    animation: slide 10s infinite linear forwards;
+}
+
+@keyframes slid {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+nav ul {
     background-color: rgb(255, 253, 252);
     padding: 10px;
     border-style: solid;
@@ -16,23 +61,23 @@ nav ul{
 
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: green;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: inline;
     margin-right: 30px;
     margin-left: 30px;
     padding: 40px 40px 40px 30px;
     color: Papayawhip;
-    
+
 
 }
 
-h1{
+h1 {
     color: black;
     font-family: "Helvetica", sans-serif;
     text-align: center;
@@ -42,10 +87,11 @@ h1{
 
 }
 
-ol{list-style-type: upper-roman;
+ol {
+    list-style-type: upper-roman;
 }
 
-h3{
+h3 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -54,13 +100,66 @@ h3{
     padding-bottom: 10px;
 }
 
-img{
+img {
+    width: 85%;
+    height: 700px;
     padding-left: 10%;
     border-radius: 20px;
-    
 }
-iframe{
-    padding-left: 10%;
-    
 
+img {
+    border: 2px solid white;
+}
+
+img:hover {
+    border: 2px dashed Navy;
+}
+
+iframe {
+    padding-left: 10%;
+}
+
+.topDivider {
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #f5fffa;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.stylishBox {
+    background-color: rgb(135, 206, 250, 0.75);
+    color: #a52a2a;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f5fffa;
+    border-radius: 10px;
+}
+
+.someSpaces {
+    padding: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+#welcome {
+    color: whitesmoke;
+}
+
+#loveB {
+    border-radius: 100%;
+    width: 5px;
+    animation-name: myFirstAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes myFirstAnimation {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 800px;
+    }
 }
