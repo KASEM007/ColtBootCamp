@@ -106,9 +106,87 @@
 // const newDivText = document.createTextNode('Hello 2end');
 // console.log(newDivText);
 // ***** button
-var button = document.getElementById('button').addEventListener('click', buttonClick);
+//const button = document.getElementById('button').addEventListener('click', buttonClick);
+// let button = document.getElementById('button');
+// let box = document.getElementById('box');
+// function buttonClick(){
+//     document.getElementById('header-title').textContent = 'Changed';
+//     document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+//     //console.log(e);
+// }
+// box.addEventListener('mousemove', runEvent);
+// box.addEventListener('mouseenter', runEvent);
+// box.addEventListener('mouseleave', runEvent);
+// box.addEventListener('mouseover', runEvent);
+// box.addEventListener('mousemove', runEvent);
+// const itemInput = document.querySelector('input[type="text"]');
+// const form = document.querySelector('form');
+// itemInput.addEventListener('keydown', runEvent)
+// function runEvent(e){
+//     console.log('EVENT TYPE: '+e.type);
+//     console.log(e.target.value);
+//     document.getElementById('output').innerHTML = '<h3> '+e.target.value+' </h3>';
+//output.innerHTML= '<h3>MouseX: '+e.offsetX+' </h3><h3>MouseY: '+e.offsetY+ '</h3>';
+//box.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 40)";
+//document.body.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 40)";
+//}
+//*** start project */
+var form = document.getElementById('addForm');
+var itemList = document.getElementById('items');
+var filter = document.getElementById('filter'); //form submit event
 
-function buttonClick() {
-  document.getElementById('header-title').textContent = 'Changed';
-  document.querySelector('#main').style.backgroundColor = '#f4f4f4'; //console.log(e);
+form.addEventListener('submit', addItem); // Delete Event
+
+itemList.addEventListener('click', removeItem); //Add filter
+
+filter.addEventListener('keyup', filterItems); //Add item
+
+function addItem(e) {
+  e.preventDefualt(); //Get input Value
+
+  var newItem = document.getElementById('item').value; //creat new li element
+
+  var li = document.createElement('li'); // Add class
+
+  li.className = 'list-group-item'; //Add text node with input value
+
+  li.appendChild(document.createTextNode(newItem)); //creat Delete button element
+
+  var deleteBtn = doument.createElement('button'); // Add classes to del button
+
+  deleteBtn.className = 'btn btn-danger btn-sm float-right delete'; // Append text node
+
+  deleteBtn.appendChild(document.createTextNode('x')); //Append button to li
+
+  li.appendChild(deleteBtn); //Append li to list
+
+  itemList.appendChild(li);
+} // Remove item
+
+
+function removeItem(e) {
+  if (e.target.classList.contains('delete')) {
+    if (confirm('Are You Sure?')) {
+      var li = e.target.parentElement;
+      itemList.removeChild(li);
+    }
+  }
+} // filter items
+
+
+function filterItems(e) {
+  //convert text to lower case
+  var text = e.target.value.toLowerCase(); // get list
+
+  var items = itemList.getElementsByTagName('li'); // convert to an erray
+
+  Array.form(items).forEach(function (item) {
+    var itemName = item.firstChild.textContent;
+
+    if (itemName.toLowerCase().indexOf(text) != -1) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
 }
