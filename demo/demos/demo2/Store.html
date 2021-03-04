@@ -5,86 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="firstWeb.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="store.css">
 </head>
 <body>
-    <h1> Store </h1>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li> <a href="firstWeb.html"> HOME </a></li>
+                <li> <a href="Store.html">STORE </a></li>
+                <li> <a href="About.html">ABOUT </a></li>
+            </ul>
+        </nav>
+        <nav class="container-head">
+            <h1 class="band-name band-nam-large"> T.S Music </h1>
+        </nav>
+    </header>
+
     <!-- <img src="https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Music"> -->
-    
-    <section>
-        <h2> Music</h2>
-        <div>
-            <div>
-                <strong> Lover</strong>
+    <!-- Album sales -->
+    <section class="container content-section">
+        <h2 class="section-header"> Music</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title"> Lover</span>
+                <img class="shop-item-image" src="img/Lover_album_cover_blanket.png" alt="labum cover">
+                <div shop-item-details>
+                    <span class="shop-item-price"> $12.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div>
             </div>
-            <img class="storePic" src="img/Lover_album_cover_blanket.png" alt="labum cover">
             <div>
-                <span> $12.99</span>
-                <button role="button">Add To Cart</button>
+                <div>
+                    <span class="shop-item-title"> 1989 </span>
+                </div>
+                <img class="shop-item-image" src="img/Taylor-Swift-1989-album-cover.png" alt="1989 cover">
+                <div>
+                    <span class="shop-item-price"> $12.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div>
             </div>
-        </div>
-        <br>
-    </section>
-    <section>
-       
-        <div>
             <div>
-                <strong> 1989 </strong>
+                <div>
+                    <span class="shop-item-title"> 21 </span>
+                </div>
+                <img  class="shop-item-image" src="img/21.png" alt="21 cover">
+                <div>
+                    <span class="shop-item-price"> $12.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div>
             </div>
-            <img class="storePic" src="img/Taylor-Swift-1989-album-cover.png" alt="1989 cover">
+        
             <div>
-                <span> $12.99</span>
-                <button role="button">Add To Cart</button>
+                <div>
+                    <span class="shop-item-title"> Red</span>
+                </div>
+                <img  class="shop-item-image" src="img/red.jpg" alt="red cover">
+                <div>
+                    <span class="shop-item-price"> $12.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div>
             </div>
-        </div>
-        <br>
-    </section>
-
-    <section>
-       
-        <div>
             <div>
-                <strong> 21 </strong>
+                <div>
+                    <span class="shop-item-title"> Reputation</span>
+                </div>
+                <img  class="shop-item-image" src="img/reputation.jpg" alt="reputation cover">
+                <div>
+                    <span class="shop-item-price"> $12.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div>
             </div>
-            <img  class="storePic" src="img/21.png" alt="21 cover">
             <div>
-                <span> $12.99</span>
-                <button role="button">Add To Cart</button>
-            </div>
-        </div>
-        <br>
-    </section>
-
-    <section>
-     
-        <div>
-            <div>
-                <strong> Red</strong>
-            </div>
-            <img  class="storePic" src="img/red.jpg" alt="red cover">
-            <div>
-                <span> $12.99</span>
-                <button role="button">Add To Cart</button>
-            </div>
-        </div>
-        <br>
-    </section>
-
-    <section>
-       
-        <div>
-            <div>
-                <strong> Reputation</strong>
-            </div>
-            <img  class="storePic" src="img/reputation.jpg" alt="reputation cover">
-            <div>
-                <span> $12.99</span>
-                <button role="button">Add To Cart</button>
+                <div>
+                    <span class="shop-item-title"> Speak Now</span>
+                </div>
+                <img  class="shop-item-image" src="img/reputation.jpg" alt="reputation cover">
+                <div>
+                    <span class="shop-item-price"> $12.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div>
             </div>
         </div>
-        <br>
     </section>
 
+<!-- Merchandies Sales -->
     <section>
         <h2> Merch</h2>
         <section>
@@ -144,18 +149,43 @@
         </div>
         <div>
             <img src="https://cdn.shopify.com/s/files/1/2712/7906/products/3D_Printed_Taylor_Swift_Tops_T_shirt_DT06_1800x.jpg?v=1530762826" width="100" alt="red cover">
+            <span>T-Shirt</span>
+            &lt;&gt;
+            <span> $19.99</span>
+            &lt;&gt;
+            <input type="number" value="1">
+            <button role="button">Remove</button>
+        </div>
 
+        <div>
+            <img src="https://data.whicdn.com/images/220123036/original.jpg" width="100" alt="coffeecup">
+            <span>Album 3</span>
+            &lt;&gt;
+            <span> $9.99</span>
+            &lt;&gt;
+            <input type="number" value="2">
+            <button role="button">Remove</button>
+        </div>
+        <hr>
+        <div>
+            <strong> Total</strong>
+            <span> $39.97</span>
+        </div>
+        <div>
+            <button role="button">PURCHASE</button>
         </div>
     </section>
 
 
 
     <footer>
-        <h3> T.S Music </h3>
+        <h3> Contact T.S Music </h3>
         <ul>
-            <li><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Youtube"></li>
-            <li><img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=80" alt="Spotifi"></li>
-            <li><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=80" alt="instgram"></li>
+            <li> <a href="https://youtube.com" target="_blank"> <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Youtube"> </a></li>
+
+            <li> <a href="https://shopify.com" target="_blank"><img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=80" alt="Spotify"> </a> </li>
+
+            <li> <a href="https://www.instegram.com" target="_blank"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=80" alt="instgram"></a></li>
         </ul>
     </footer>
 </body>
