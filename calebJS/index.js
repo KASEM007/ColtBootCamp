@@ -1,5 +1,6 @@
-document.getElelmentById("button").onclick = function(){
-    document.getElementById("confirm").innerHTML = "order placed, Check email for confirmation";
-    document.getElementById("button").style.display = "none";
+document.querySelector("#button").onclick = function(){
+    document.querySelector("#confirm").innerHTML = "Order placed, Check email for confirmation";
+    // make the button disappear
+    document.querySelector("#button").style.display = "none";
 
 }

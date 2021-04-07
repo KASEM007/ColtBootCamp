@@ -61,4 +61,30 @@ input.addEventListener('input', function (e){
     if(input.value ===""){
         h1.innerText = "Enter Your Username";
     }
-})
+});
+
+document.querySelector("#btn").onclick = function(){
+    document.querySelector("#start").innerHTML = "Let's Get Started!";
+
+    document.querySelector("#btn").style.display = "none";
+
+}
+
+// document.querySelector("#button").onclick = function(){
+//     document.querySelector("#confirm").innerHTML = "Order placed, Check email for confirmation";
+//     // make the button disappear
+//     document.querySelector("#button").style.display = "none";
+
+// }
+
+// {   let name = prompt("What is your name?");
+//     let point = name === "kasem"? 10:2;
+//     console.log(point);
+
+// }
+
+
+let password;
+do{
+    password = prompt("What is the passcode?");    
+} while(password.toLowerCase() !== "let me in");
