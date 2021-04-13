@@ -172,11 +172,8 @@ document.querySelector("#btn").onclick = function(){
         console.log("~~~~~~~~~")
     });
 
-
     const valentine = new Date();
     console.log(valentine)
-
-
 
 }
 
