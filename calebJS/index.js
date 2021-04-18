@@ -1,6 +1,12 @@
-document.querySelector("#button").onclick = function(){
-    document.querySelector("#confirm").innerHTML = "Order placed, Check email for confirmation";
-    // make the button disappear
-    document.querySelector("#button").style.display = "none";
+
+
+document.querySelector(".btn").onclick = function(){
+    document.querySelector("#confirm").innerHTML = "Confirmation number sent to your email!";
+    document.querySelector(".btn").style.display = "none";
+
+
 
 }
+
+
+

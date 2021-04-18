@@ -165,15 +165,63 @@ document.querySelector("#btn").onclick = function(){
     // }
 
     //** Bestway
-    grades.forEach(function(row){
-        row.forEach(function(col){
-            console.log(col);
-        });
-        console.log("~~~~~~~~~")
-    });
+    // grades.forEach(function(row){
+    //     row.forEach(function(col){
+    //         console.log(col);
+    //     });
+    //     console.log("~~~~~~~~~")
+    // });
 
-    const valentine = new Date();
-    console.log(valentine)
+    // Date
+    // const valentine = new Date();
+    // console.log(valentine)
+
+
+    // let myDate = new Date('12 Jan 1995 00:15:54 GMT');
+    // console.log(myDate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 }
+
+
 
